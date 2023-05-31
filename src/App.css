@@ -1,0 +1,166 @@
+
+body {
+  background-color: #80c6e8;
+  background-image: url(images/8124257.webp);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position-x: -75px;
+  background-position-y: 1px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px;
+}
+
+.top-container {
+  border-radius: 15px;
+  background-color: whitesmoke;
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0px 30px 30px 30px;
+  border: 2px solid #4f4c4a ;
+  transition: 0.4s;
+}
+.top-container:hover {
+  transform: scale(1.025);
+  transition: 0.4s;
+}
+
+.main-container {
+  margin: 0 auto;
+  width: 400px;
+  background-color: #fbec00;
+  border: 10px solid #d6b317;
+  text-align: center;
+  height: 535px;
+  border-radius: 15px;
+  box-shadow: 8px 10px 10px rgb(85, 84, 84);
+  transition: 0.4s;
+}
+.main-container:hover {
+  transform: scale(1.025);
+  transition: 0.4s;
+}
+
+.image-box {
+  background-color: white;
+  border: 5px solid #d6b317;
+  margin: 23px;
+  height: 220px;
+  box-shadow: 5px 5px 5px rgb(56, 56, 56);
+  background-image: url(images/pokemon-oras-battle-background-by-Jenske05-on-DeviantArt.jpg);
+  background-position: center;
+}
+
+.search {
+  font-weight: bold;
+}
+input {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-left: 10px;
+}
+button:hover  {
+  opacity: 1;
+  background-color: #4d8ccb;
+  color: black;
+}
+button {
+  text-decoration: none;
+  padding: 12px 32px;
+  width: fit-content;
+  text-decoration: none;
+  border: none;
+  background-color: #80c6e8;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+
+
+
+input {
+  height: 26px;
+  border-radius: 6px;
+  border: 1px solid #4f4c4a;
+}
+
+.search-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  padding-top: 10px;
+  font-size: 30px;
+  align-items: baseline;
+}
+
+
+#update-img {
+  padding: 60px 0px 0px 20px;
+  height: 85%;
+  position: relative;
+  bottom: 25px;
+  
+}
+
+
+
+.abilities {
+  font-size: large;  
+}
+
+li {
+  padding-bottom: 20px;
+  list-style: none;
+}
+
+/* Header of a div */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  height: 30px;
+  padding-bottom: 10px; 
+}
+.hp {
+  padding-right: 10px;
+  font-size: larger;
+}
+
+.title {
+  text-align: left;
+  padding-left: 20px;
+  font-weight: bold;
+}
+#update-name {
+  font-size: 24px;
+  padding-right: 40px; 
+}
+
+hr {
+  width: 80%;
+  background-color: black;
+  border: none;
+  height: 1px;
+}
+
+/* Bounce animation for the image */
+.bounce {
+  animation: bounce 4.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+ 
+  100% {
+    transform: translateY(0);
+  }
+  /* 40% {
+    transform: translateY(-15px);
+  } */
+  60% {
+    transform: translateY(-12px);
+  }
+}

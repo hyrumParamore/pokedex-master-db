@@ -4,9 +4,7 @@ This project is a follow up/update to the one that I [wrote previously](https://
 
 The purpose for this project was to learn how I could implement a database into something that I had already made. While this made it easier for me to not have to create an entirely new website base, it was also a bit difficult to implement it into a program that was already working. Overall, I learned a lot about databases, specifically Firebase and would like to look more into it again sometime.
 
-<!-- {Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of the cloud database.} -->
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/PoA5mWJmhXc)
 
 
 # Cloud Database

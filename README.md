@@ -15,8 +15,8 @@ The main structure is again not an SQL structure and not a relational database, 
 Mine is a very simple JSON format and the data is stored and looks like this:
 
 ```json
-// JSON format for the Firebase Realtime Database.
-// This is what it looks like when it is saved in the database.
+JSON format for the Firebase Realtime Database.
+This is what it looks like when it is saved in the database.
 {
   "pokedexform": {
     "-NWxlQuvii6nK9gVoA23": {

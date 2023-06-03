@@ -1,7 +1,8 @@
 import React, {useState} from "react";
 import populatePokemon from '../populate';
-// import {getDataAndDisplay} from '../partials/saved';
 
+// This file contains the code needed to save the pokemon data to the database
+// It also displays the search bar (header) onto the page.
 
 function SaveData() {
 
@@ -36,8 +37,7 @@ function SaveData() {
     }
 
     
-    
-
+  // Returns the header html and allows users to save what is searched.
   return (
     
     <header>

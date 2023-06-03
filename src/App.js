@@ -4,7 +4,7 @@ import SaveData from './utils/saveData';
 import ShowPokemon from './utils/showPokemon';
 
 
-
+// Displays the main info onto the page
 function App() {
 
   return (

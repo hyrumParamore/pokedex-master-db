@@ -1,18 +1,45 @@
-# Pokémon Card Creator
+# Pokémon Card Creator - Database Storage
 
-Creating this Web App has been a idea of mine for a while now. I came up with the idea when I was taking a class learning JavaScript and had the basic outline and idea for the project but didn't have the time or talent to finish it. Now that I have learned a lot more in the past few years and I wanted to test my skills and develope a working prototype that I can further develope.
+This project is a follow up/update to the one that I [wrote previously](https://github.com/hyrumParamore/pokedex). I originally created the Pokémon card creator project as a way to test my skills in HTML, CSS, JavaScript, and React JS. With this project I wanted to take it a step further and implement a database to store the Pokémon data that is created. What I wanted to accomplish was to allow the user to search for a specific Pokémon and then choose whether or not to save that Pokémon's data to a database to be accessed whenever they want.
 
-This web app is pretty simple when looking at it from a user perspective, but looking a little deeper, it has a little more complexity built into it. This web app is a Pokémon card creator. You type in the Pokémon that you would like a card made for and it will then populate the card below.
-To start the program, you will need to install [Node.js](https://nodejs.org/en). With that you will then need to clone this repository, and then have to run a few commands to get everything set up. 
-This website has some useful tips on creating a Web App, but could also be useful starting a test server [FreeCodeCamp](https://www.freecodecamp.org/news/install-react-with-create-react-app/).
+The purpose for this project was to learn how I could implement a database into something that I had already made. While this made it easier for me to not have to create an entirely new website base, it was also a bit difficult to implement it into a program that was already working. Overall, I learned a lot about databases, specifically Firebase and would like to look more into it again sometime.
 
-The purpose for writing this software was more of a challenge for myself to see what I could accomplish with what I at this point in my life. I also am a huge fan of Pokémon and love the card game as well as the video games! I thought it would be fun to mix two of my favorite things together and see what happens! I have other plans that I want to incorporate into this project including deck building, more customization with the cards, and possibly even battles with the cards! I will have to save those for a future project and time. 
+<!-- {Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of the cloud database.} -->
 
-[Pokémon Card Creator - Project Demo](https://youtu.be/soCmoYlIsh0)
+[Software Demo Video](http://youtube.link.goes.here)
 
-# Web Pages
 
-I currently only have one web page for this but am looking to add more when I have more time available. As of now, this project doesn't really require more than a single page to run correctly, but again, I am looking to add more in the future.
+# Cloud Database
+
+The cloud database that I decided to use was Firebase Realtime Database by Google. This specific database platform is a NoSQL database meaning it lets you store and sync data between users in realtime.
+
+The main structure is again not an SQL structure and not a relational database, but rather the main structure is most commonly written in a JSON format.
+Mine is a very simple JSON format and the data is stored and looks like this:
+
+```json
+// JSON format for the Firebase Realtime Database.
+// This is what it looks like when it is saved in the database.
+{
+  "pokedexform": {
+    "-NWxlQuvii6nK9gVoA23": {
+      "name": "Mewtwo"
+    },
+    "-NWxlSRH29dGMDxvaVYf": {
+      "name": "Charmander"
+    },
+    "-NWxlTqSw9Cyy9UBA_CA": {
+      "name": "Blastoise"
+    },
+    "-NWxlVM-P_QrWj6dvCpM": {
+      "name": "Charizard"
+    },
+    "-NWxlXFBCUm179l2xSnP": {
+      "name": "Eevee"
+    }
+  }
+}
+```
+I did create other ```keys``` that contained different information for each Pokémon, but took them out because I wanted to get it to work with just the ```name``` first. I 
 
 
 # Development Environment
@@ -22,25 +49,28 @@ I currently only have one web page for this but am looking to add more when I ha
 * HTML / CSS
 * React JavaScript Library
 * Git / Github
-* [Node.js](https://nodejs.org/en)
-* [PokeAPI](https://pokeapi.co/)
-
-
+* Node.js
+* JSON
+* PokeAPI
+* Firebase Realtime Database
 
 
 # Useful Websites
 
-* [Node.js](https://nodejs.org/en)
-* [PokeAPI](https://pokeapi.co/)
-* [FreeCodeCamp](https://www.freecodecamp.org/news/install-react-with-create-react-app/)
+**[Original Project](https://github.com/hyrumParamore/pokedex)** - It goes into more depth into how I created the Pokémon Web App.
+
+* [Firebase Documentation - Realtime Database](https://firebase.google.com/docs/database/web/start)
+* [Firebase Documentation - Cloud Firestone](https://firebase.google.com/docs/firestore)
 * [W3Schools for Javascript](https://www.w3schools.com/js/default.asp)
 * [W3Schools for React](https://www.w3schools.com/react/default.asp)
-* [Background for the Website](https://wallpapersafari.com/w/jJD5dA). I am not sure who the original artist is, but this is where I found the image I used.
-* The other image that is in the background of the card I got from here: [pokemon oras battle background](https://www.deviantart.com/jenske05/art/pokemon-oras-battle-background-509465798) with credit to Jenske05.
-* All of the other images come from PokeAPI.
+* And lots of different YouTube videos on how people have connected to a Firebase Realtime Database (Just search "how to connect to a firebase realtime database using react js) ***:D***
+
 
 # Future Work
 
-* Make it printable.
-* Add more cards and be able to create different decks.
-* Make the cards more customizable and work better with the different abilities and moves that each Pokémon has.
+There are a lot of future ideas that I have for this project, here are a few that I think would be awesome!
+
+- Implement a better way to store the data, and more types of data.
+- Implement a way to allow users to select the different Pokémon from the database list to then recreate the cards that.
+- Create a way to display all of the cards that have been created and allow the user to look through them and select or delete specific ones. 
+- Create a way to build different decks based off the cards that they have created.

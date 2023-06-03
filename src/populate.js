@@ -1,6 +1,7 @@
 
 // Populates the cards with the correct data from the Pokemon API.
 function populatePokemon() {
+  
     
     const search_result = document.getElementById('search_q');
     const search_term = search_result;
@@ -13,13 +14,12 @@ function populatePokemon() {
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
-
-
-    // Check if the input is empty then do say so :)
     
 
     // api https://pokeapi.co/docs/v2/pokemon
-    const getPokemonData = async term => {
+    const GetPokemonData = async term => {
+
+        
             
         const url = `https://pokeapi.co/api/v2/pokemon/${term}`
         const response = await fetch(url)
@@ -29,49 +29,51 @@ function populatePokemon() {
         const type = pokemon.types[0].type.name;
         changeCardColor();
 
+        // console.log(pokemon);
+        
 
         // Checks for the pokemon element type and changes the card background to match.
         function changeCardColor() {
-            if (type == "fire"){
+            if (type === "fire"){
                 console.log(type + "!");
                 element.style.backgroundColor = "#dc6956";
-            } else if (type == "water"){
+            } else if (type === "water"){
                 console.log(type + "!");
                 element.style.backgroundColor = "#00b0eb";
             }
-            else if (type == "grass"){
+            else if (type === "grass"){
                 console.log(type + "!");
                 element.style.backgroundColor = "#73be06";
             }
-            else if (type == "electric"){
+            else if (type === "electric"){
                 console.log(type + "!");
                 element.style.backgroundColor = "#fbec00";
             }
-            else if (type == "metal" || type == "steel"){
+            else if (type === "metal" || type === "steel"){
                 console.log(type + "!");
                 element.style.backgroundColor = "#94a8bb";
             }
-            else if (type == "fighting" || type == "rock"){
+            else if (type === "fighting" || type === "rock"){
                 console.log(type + "!");
                 element.style.backgroundColor = "#e3620e";
             }
-            else if (type == "fairy"){
+            else if (type === "fairy"){
                 console.log(type + "!");
                 element.style.backgroundColor = "#f15191";
             }
-            else if (type == "darkness"){
+            else if (type === "darkness"){
                 console.log(type + "!");
                 element.style.backgroundColor = "#104e6f";
             }
-            else if (type == "psychic" || type == "poison"){
+            else if (type === "psychic" || type === "poison"){
                 console.log(type + "!");
                 element.style.backgroundColor = "#a0358a";
             }
-            else if (type == "flying"){
+            else if (type === "flying"){
                 console.log(type + "!");
                 element.style.backgroundColor = "#a0358a";
             }
-            else if (type == "normal"){
+            else if (type === "normal"){
                 console.log(type + "!");
                 element.style.backgroundColor = "rgb(211, 211, 211)";
             }else {
@@ -114,15 +116,19 @@ function populatePokemon() {
         document.getElementById('update-weight').innerHTML = `${pokemon.weight}kg`
         document.getElementById('update-height').innerHTML = `0.${pokemon.height}m`
 
+        
     }
 
     // search_btn.addEventListener('click', () => getPokemonData(search_term.value));
-    var event = getPokemonData(search_term.value.toLowerCase());
+    var event = GetPokemonData(search_term.value.toLowerCase());
     search_term.addEventListener('keypress', (event) => {
         if (event.keyCode === 13) {
             search_btn.click();
         }
     }); 
+
+
 }
+
 
 export default populatePokemon;

@@ -79,6 +79,18 @@ button {
   border-radius: 6px;
 }
 
+.btn-save {
+  margin-top: 20px;
+  border: 1px solid #4f4c4a;
+  background-color: white;
+  box-shadow: 1px 1px 6px rgba(56, 56, 56, .5);
+
+}
+.btn-save:hover {
+  background-color:rgb(55, 242, 55);
+  
+}
+
 
 
 input {
@@ -150,6 +162,36 @@ hr {
 .bounce {
   animation: bounce 4.5s;
   animation-iteration-count: infinite;
+}
+
+/* POKEMON LIST */
+.pokemon-list {
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+  width: 20%;
+  
+}
+
+.pokemon-list ul:hover {
+  transform: scale(1.025);
+  transition: 0.25s;
+}
+.pokemon-list ul {
+  background-color: rgba(56, 56, 56, .7);
+  color: white;
+  padding-left: 0px;
+  border: 4px solid #d6b317;
+  border-radius: 10px;
+  transition: 0.25s;
+
+}
+.pokemon-list li {
+  padding: 15px;
+  list-style: none;
+  /* padding-left: 0px; */
+  text-decoration: none;
+  
 }
 
 @keyframes bounce {

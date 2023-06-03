@@ -18,6 +18,9 @@
 .env.test.local
 .env.production.local
 .env
+src/setupTests.js
+/public
+src/reportWebVitals.js
 
 # Database info
 firebase.js
